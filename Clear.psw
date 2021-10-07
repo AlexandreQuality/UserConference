@@ -435,7 +435,7 @@
     <created_user>-</created_user>
     <created_date>2021&#x2f;10&#x2f;06 23&#x3a;05&#x3a;56.025</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2021&#x2f;10&#x2f;07 00&#x3a;41&#x3a;18.609</modified_date>
+    <modified_date>2021&#x2f;10&#x2f;07 09&#x3a;00&#x3a;23.863</modified_date>
 	<key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
@@ -465,7 +465,7 @@
 <reservoir_sampling_size/>
 <reservoir_sampling_seed>1</reservoir_sampling_seed>
 <include_input_as_output>N</include_input_as_output>
-<py_script>import os&#xd;&#xa;&#xd;&#xa;pasta &#x3d; r&#x27;&#x24;&#x7b;Internal.Entry.Current.Directory&#x7d;&#x27;.replace&#x28;&#x27;file&#x3a;&#x2f;&#x2f;&#x2f;&#x27;,&#x27;&#x27;&#x29;&#xd;&#xa;&#xd;&#xa;log_message&#x3d;&#x27;&#x27;&#xd;&#xa;delete&#x3d;&#x5b;&#x5d;&#xd;&#xa;&#xd;&#xa;files_list &#x3d;os.listdir&#x28;pasta&#x29;&#xd;&#xa;print&#x28;files_list&#x29;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;for file in files_list&#x3a;&#xd;&#xa;    if &#x27;.csv&#x27; in file&#x3a;&#xd;&#xa;        delete.append&#x28;os.remove&#x28;file&#x29;&#x29;&#xd;&#xa;log_message&#x3d;&#x27;True&#x27;</py_script>
+<py_script>import os&#xd;&#xa;&#xd;&#xa;pasta &#x3d; r&#x27;&#x24;&#x7b;Internal.Entry.Current.Directory&#x7d;&#x27;.replace&#x28;&#x27;file&#x3a;&#x2f;&#x2f;&#x2f;&#x27;,&#x27;&#x27;&#x29;&#xd;&#xa;&#xd;&#xa;log_message&#x3d;&#x27;&#x27;&#xd;&#xa;delete&#x3d;&#x5b;&#x5d;&#xd;&#xa;&#xd;&#xa;files_list &#x3d;os.listdir&#x28;pasta&#x29;&#xd;&#xa;if &#x27;brio_totals - Sheet1.csv&#x27; in files_list&#x3a;&#xd;&#xa;    for file in files_list&#x3a;&#xd;&#xa;        if &#x27;brio_totals - Sheet1.csv&#x27; in file&#x3a;&#xd;&#xa;            destino&#x3d; fr&#x27;&#x7b;pasta&#x7d;&#x2f;&#x7b;file&#x7d;&#x27;&#xd;&#xa;            os.remove&#x28;destino&#x29;&#xd;&#xa;    log_message&#x3d;f&#x27;Removido&#x3a;  &#x7b;file&#x7d;&#x27;&#xd;&#xa;    &#xd;&#xa;else&#x3a; log_message &#x3d; &#x27;Arquivo N&#xe3;o Encontrado&#x27;&#xd;&#xa;&#xd;&#xa;print&#x28;log_message&#x29;</py_script>
 <load_script_at_runtime>N</load_script_at_runtime>
 <script_to_load/>
 <continue_on_unset_vars>N</continue_on_unset_vars>

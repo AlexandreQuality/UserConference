@@ -6,10 +6,14 @@ log_message=''
 delete=[]
 
 files_list =os.listdir(pasta)
-print(files_list)
+if 'brio_totals - Sheet1.csv' in files_list:
+    for file in files_list:
+        if 'brio_totals - Sheet1.csv' in file:
+            destino= fr'{pasta}/{file}'
+            os.remove(destino)
+            log_message=f'Removido:  {file}'
+    
+    
+else: log_message = 'Arquivo Não Encontrado'
 
-
-for file in files_list:
-    if '.csv' in file:
-        delete.append(os.remove(file))
-log_message='True'
+print(log_message)
